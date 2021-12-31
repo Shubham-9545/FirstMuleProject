@@ -36,6 +36,15 @@
 							<artifactId>mysql-connector-java</artifactId>
 						</sharedLibrary>
 					</sharedLibraries>
+					<cloudHubDeployment>
+					<username>Shubhamt_00</username>
+					<environment>Sandbox</environment>
+					<workers>1</workers>
+					<workerType>Micro</workerType>
+					<applicationName>Assignment1git</applicationName>
+					<password>MH43BN9545@t</password>
+					<muleVersion>4.1.4</muleVersion>
+					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
