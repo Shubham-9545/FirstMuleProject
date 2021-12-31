@@ -41,7 +41,7 @@
 					<environment>Sandbox</environment>
 					<workers>1</workers>
 					<workerType>Micro</workerType>
-					<applicationName>Assignment1git</applicationName>
+					<applicationName>Assignment1gitHub</applicationName>
 					<password>MH43BN9545@t</password>
 					<muleVersion>4.1.4</muleVersion>
 					</cloudHubDeployment>
