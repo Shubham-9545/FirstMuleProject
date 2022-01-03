@@ -1,4 +1,0 @@
-%dw 2.0
-
-type auto_c6f6e585_155f_4edb_9991_703c8887b512_Output_Payload = Array<{|  EMPID: String,   FirstName?: String,   LastName?: String,   phone?: Number,   Address?: String,   Designation?: String|}>
-
