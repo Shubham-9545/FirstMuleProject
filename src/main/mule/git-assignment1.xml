@@ -20,7 +20,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	empid : attributes.uriParams.empid
 }]]]></db:input-parameters>
 		</db:select>
-		<ee:transform doc:name="Transform Message" doc:id="d70eaba8-2a7f-48fd-ad1b-095c91d97727" >
+		<ee:transform doc:name="payload" doc:id="d70eaba8-2a7f-48fd-ad1b-095c91d97727" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
