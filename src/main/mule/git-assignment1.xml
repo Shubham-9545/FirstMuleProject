@@ -14,20 +14,6 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</db:config>
 	<flow name="git-assignment1Flow" doc:id="ba3ee7fb-75d6-4d60-ae80-00861e0bbedb" >
 		<http:listener doc:name="Listener" doc:id="9fbbe319-61cb-41f2-ad4d-1cd27698fd2a" config-ref="HTTP_Listener_config" path="/testgit/{empid}"/>
-		<db:select doc:name="Select" doc:id="447702e5-e9eb-4f51-ab98-5909448432f5" config-ref="Database_Config">
-			<db:sql ><![CDATA[select * from employee where EMPID = :empid]]></db:sql>
-			<db:input-parameters ><![CDATA[#[{
-	empid : attributes.uriParams.empid
-}]]]></db:input-parameters>
-		</db:select>
-		<ee:transform doc:name="Transform Message" doc:id="42e15aa9-c79a-4d7f-ada8-eda7db24d3be" >
-			<ee:message >
-				<ee:set-payload ><![CDATA[%dw 2.0
-output application/json
----
-payload]]></ee:set-payload>
-			</ee:message>
-		</ee:transform>
-		<logger level="INFO" doc:name="Logger" doc:id="eaa0f413-5930-432d-8f70-8fb9a6e05b52" />
+		<set-payload value='#["empid" : attributes.uriParams.empid]' doc:name="Set Payload" doc:id="15516809-ccf3-4e47-9d83-8ec65b432bef" />
 	</flow>
 </mule>
