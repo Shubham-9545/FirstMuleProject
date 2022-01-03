@@ -34,10 +34,10 @@
 						<username>Shubhamt_00</username>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
-						<workerType>Micro</workerType>
+						<workerType>MICRO</workerType>
 						<applicationName>Assignment1gitHub</applicationName>
 						<password>MH43BN9545@t</password>
-						<muleVersion>4.1.4</muleVersion>
+						<muleVersion>4.4.0</muleVersion>
 					</cloudHubDeployment>
 					<sharedLibraries>
 						<sharedLibrary>
