@@ -20,6 +20,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	empid : attributes.uriParams.empid
 }]]]></db:input-parameters>
 		</db:select>
+		<logger level="INFO" doc:name="Logger" doc:id="eaa0f413-5930-432d-8f70-8fb9a6e05b52" />
 		<ee:transform doc:name="payload" doc:id="d70eaba8-2a7f-48fd-ad1b-095c91d97727" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
