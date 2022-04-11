@@ -19,4 +19,15 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<sub-flow name="git-assignment1Sub_Flow" doc:id="eae99893-5f5a-45ee-b7ef-43e0056ef4bd" >
 		<set-payload value='#["empid" : attributes.uriParams.empid]' doc:name="Set Payload" doc:id="15516809-ccf3-4e47-9d83-8ec65b432bef" />
 	</sub-flow>
+	<flow name="git-assignment1Flow1" doc:id="0b2ce1f4-acf5-4949-9f76-3e6855252d12" >
+		<ee:transform doc:name="Transform Message" doc:id="735f230e-2cbf-4545-b990-c3e7e5ae74a7" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="a3cb5ec6-9dc1-4b40-bc5e-6d1eb4b76e15" />
+	</flow>
 </mule>
